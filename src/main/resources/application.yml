@@ -1,0 +1,19 @@
+# RabbitMQ 基本配置
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+  redis:
+    host: localhost
+    password: 123456
+    port: 6379
+server:
+  tomcat:
+    max-threads: 500
+    max-connections: 10000
